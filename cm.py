@@ -67,7 +67,7 @@ if st.button("Generate Confusion Matrix"):
                 st.subheader("Heatmap Visualization (Compact)")
 
                 # Create two columns: narrow (1/6th) for heatmap, wide spacer for balance
-                col_heatmap, _ = st.columns([1, 5])
+                col_heatmap, _ = st.columns([1, 4])
 
                 with col_heatmap:
                     fig, ax = plt.subplots(figsize=(3, 3), dpi=200)
@@ -87,3 +87,4 @@ if st.button("Generate Confusion Matrix"):
 
         except ValueError:
             st.error("⚠️ Please enter valid numeric values separated by commas.")
+
